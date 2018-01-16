@@ -31,9 +31,7 @@ def first_wa (array)
       if el[1] == 'a'
         contains_wa << el
       end
-    end  
+    end
   }
   contains_wa
 end
-
-
