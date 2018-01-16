@@ -40,6 +40,7 @@ def remove_non_strings (array)
   array.each { |el|
     if el.class == String
       strings_only << el
+    end
   }
   strings_only
 end
