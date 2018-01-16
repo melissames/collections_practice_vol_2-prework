@@ -22,3 +22,18 @@ def contain_a (array)
   }
   contains_a
 end
+
+def first_wa (array)
+  contains_wa = []
+
+  array.each { |el|
+    if el[0] == 'w'
+      if el[1] == 'a'
+        contains_wa << el
+      end
+    end  
+  }
+  contains_wa
+end
+
+
