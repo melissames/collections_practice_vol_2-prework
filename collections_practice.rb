@@ -24,7 +24,6 @@ def contain_a (array)
 end
 
 def first_wa (array)
-
   array.each { |el|
     if el[0] == 'w'
       if el[1] == 'a'
@@ -33,4 +32,14 @@ def first_wa (array)
     end
   }
   contains_wa
+end
+
+def remove_non_strings (array)
+  strings_only = []
+
+  array.each { |el|
+    if el.class == String
+      strings_only << el
+  }
+  strings_only
 end
