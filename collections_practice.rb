@@ -13,7 +13,8 @@ def contain_a (array)
   contains_a = []
 
   array.each { |el|
-    el.each { |letter|
+    string_to_array = el.join
+    string_to_array.each { |letter|
       if letter == 'a'
         contains_a << el
       end
